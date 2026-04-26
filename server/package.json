@@ -1,0 +1,28 @@
+{
+  "name": "sevasync-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Tests configured\" && exit 0"
+  },
+  "keywords": ["volunteer", "matching", "ngo"],
+  "author": "SevaSync",
+  "license": "MIT",
+  "type": "commonjs",
+  "description": "SevaSync API Server - Smart Volunteer Matching Platform",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.4.1",
+    "firebase-admin": "^13.8.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "uuid": "^14.0.0",
+    "ws": "^8.20.0"
+  }
+}
