@@ -1,0 +1,13 @@
+name: Keep Alive
+
+on:
+  schedule:
+    - cron: '*/14 * * * *' # Runs every 14 minutes
+  workflow_dispatch:      # Allows you to run this manually for testing
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render Server
+        run: curl -I https://sevasync-rbvh.onrender.com
